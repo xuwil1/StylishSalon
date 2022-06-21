@@ -1,0 +1,260 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clearfix{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+	clear: both;
+}
+.container {
+  display: flow-root;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 20px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* nav
+/*******************************************/
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: .5em 1em;
+  align-items: center;
+  border-bottom: 2px solid black;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.menu{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100em;
+  justify-content: space-around;
+  align-items: center;
+}nav>div+div+div>a{
+  white-space: nowrap;
+}
+/******************************************
+/* main
+/*******************************************/
+main{
+  display: fixed;
+  flex-flow: column nowrap;
+  padding: 10% 10% 5% 10%;
+  background: url(main1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main>img{
+  display: flex;
+  width: 500px;
+  height: 600px;
+  z-index: 0;
+}
+.side{
+  position: absolute;
+  transform: rotate(90deg);
+  top: 500px;
+  right: 5%;
+  -moz-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+} 
+.box{
+  width: 15em;
+  height: 12em;
+  margin: 2em 0 3em 0;
+}
+/******************************************
+/* triple
+/*******************************************/
+.triple{
+  padding: 2% 5%;
+  background-color: #fff7f0;
+}
+/******************************************
+/* momentum
+/*******************************************/
+#momentum{
+  display: flex;
+  padding: 5% 10%;
+  background: #F0F8FF;
+}
+.text{
+  width: 50%;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0 10% 0 5%;
+}
+.pic{
+  padding-left: 5%;
+  display:flex;
+  float: right;
+  width: 45%;
+}
+.pic img{
+  width: 400px;
+  height: 500px;
+}
+/******************************************
+/* momentum
+/*******************************************/
+.center{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0 10%;
+}
+/******************************************
+/* silver
+/*******************************************/
+.silver{
+  display: flex;
+  padding: 5% 10%;
+}
+
+.silver div{
+  display: flex;
+  flex-flow: column nowrap;
+  height: 15em;
+  padding: 3% 5%;
+  background: #F0F8FF;
+}
+
+.triple {
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+padding-top: 5%;
+gap: 10px;
+}
+.triple img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.triple>section{
+  width: 350px;
+  font-size: .5em;
+}
+.triple>section+ img, .triple h5{
+padding-left: 25%;
+}
+.triple>section+p{
+  align-self: center;
+  justify-content: center;
+}
+/******************************************
+/* Column
+/*******************************************/
+.column{
+  display: flex;
+  flex-direction: row;
+}
+.column img{
+  width: 400px;
+  height: 500px;
+}
+/******************************************
+/* Form
+/*******************************************/
+.form {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: stretch;
+  margin: 10%; */
+  position: relative;
+  text-align: center;
+}
+#message{
+  min-height: 200px;
+  position: relative;
+  text-align: left;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+a:link, a:visited{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+nav li{
+  list-style-type: none;
+}
+h1{
+  font-size: 2em;
+}
+h5{
+  font-size: 1em;
+}
+.button,.box{
+  background: black;
+  padding: 10px;
+  color: white;
+}
+.button:hover{
+  background: white;
+  color: black;
+}
+.service{
+  width:180px;
+}
+.box>.button{
+  background:white;
+  padding: 10px;
+  color:black;
+}
+.box>.button:hover{
+  background: #F0F8FF;
+}
+#offer{
+  font-size: 1.5em;
+  margin: 0;
+}
+#discount{
+  font-size: 2em;
+  margin: 1% 0 0 0;
+}
