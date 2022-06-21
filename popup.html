@@ -14,11 +14,13 @@
         <form>
             <div>
                 <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" value="@email.com"><br>
+                <input type="text" id="email" name="email" placeholder="@email.com" onkeyup="getFetch()"><br>
+                
             </div>
+            <span id="validation"> </span>
             <div>
                 <label for="email">Subject:</label><br>
-                <input type="text" id="subject" name="subject" value="subject"><br>
+                <input type="text" id="subject" name="subject" placeholder="subject"><br>
             </div>
             <div>
                 <input type="text" id="message" name="message"><br>
